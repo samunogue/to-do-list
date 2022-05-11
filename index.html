@@ -9,9 +9,14 @@
     <title>To do list</title>
 </head>
 <body>
+    <form class="modal_task">
+        <h2>Digite o titulo</h2>
+        <input type="text" required></input>
+        <button onclick="adicionar_task()">Adicionar</button>
+    </form>
     <main>
         <section class="box_lista">
-            <button class="botao_add_task">ADD A TASK</button>
+            <button class="botao_add_task" onclick="mostrar_modal()">ADD A TASK</button>
             <div class="subtitulo_linhas">
                 <div class="linha"></div>
                 <p>Tasks</p>
