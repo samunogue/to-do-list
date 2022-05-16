@@ -6,112 +6,477 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-.modal_task{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: fit-content;
-    height: fit-content;
-    padding: 2vh 2vw 2vh;
-    background-color: white;
-    border: solid 2px black;
-    border-radius: 10px;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 2vh;
-    font-family: 'Abel', sans-serif;
-    font-weight: 600;
+@media (min-width:200px) and  (max-width:480px) {
+    .modal_task{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 70%;
+        height: fit-content;
+        padding: 2vh 3vw 2vh;
+        background-color: white;
+        border: solid 2px black;
+        border-radius: 10px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 1.8rem;
+        white-space: nowrap;
+    }
+    input{
+        width: 90%;
+        height: fit-content;
+        border: solid 2px black;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        padding: 0.3vh 0vw 0.3vh 0.2vw;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    button{
+        width: fit-content;
+        height: fit-content;
+        padding: 1vh 1.5vw 1vh;
+        border: solid 2px black;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    main{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box_lista{
+        height: fit-content;
+        width: fit-content;
+        min-height: 80%;
+        min-width: 90%;
+        padding: 2vh 0.5vw 1vh;
+        border: solid 2px black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1vh;
+    }
+    .botao_add_task{
+        width: fit-content;
+        height: fit-content;
+        padding: 0.5vh 1.5vw 0.5vh;
+        border: solid 2px black;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    .subtitulo_linhas{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+    }
+    .linha{
+        border-bottom: 2px solid black;
+        width: 25vw;
+    }
+    p{
+        font-size: 1.1rem;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    .lista_tasks{
+        width: 100%;
+        height: 2vh;
+        padding: 0vh 1vw 0vh 6vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+    .elemento{
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1rem;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    .botao_excluir{
+        width: fit-content;
+        height: fit-content;
+        padding: 0.5vh 1.5vw 0.5vh;
+        font-size: 0.8rem;
+    }    
 }
-h2{
-    font-size: 1.8rem;
+@media  (min-width:481px) and (max-width:768px) {
+    .modal_task{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: fit-content;
+        height: fit-content;
+        padding: 2vh 3vw 2vh;
+        background-color: white;
+        border: solid 2px black;
+        border-radius: 10px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 1.8rem;
+        white-space: nowrap;
+    }
+    input{
+        width: 90%;
+        height: fit-content;
+        border: solid 2px black;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        padding: 0.3vh 0vw 0.3vh 0.2vw;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    button{
+        width: fit-content;
+        height: fit-content;
+        padding: 1vh 1.5vw 1vh;
+        border: solid 2px black;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    main{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box_lista{
+        height: fit-content;
+        width: fit-content;
+        min-height: 80%;
+        min-width: 90%;
+        padding: 2vh 0.5vw 1vh;
+        border: solid 2px black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1vh;
+    }
+    .botao_add_task{
+        width: fit-content;
+        height: fit-content;
+        padding: 1vh 2vw 1vh;
+        border: solid 2px black;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    .subtitulo_linhas{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+    }
+    .linha{
+        border-bottom: 2px solid black;
+        width: 25vw;
+    }
+    p{
+        font-size: 1.3rem;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    .lista_tasks{
+        width: 100%;
+        height: 2vh;
+        padding: 0vh 1vw 0vh 3vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+    .elemento{
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1rem;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    .botao_excluir{
+        width: fit-content;
+        height: fit-content;
+        padding: 0.5vh 1.5vw 0.5vh;
+        font-size: 0.8rem;
+    }    
 }
-input{
-    width: 15vw;
-    height: fit-content;
-    border: solid 2px black;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    padding: 0.3vh 0vw 0.3vh 0.2vw;
+@media  (min-width:769px) and (max-width:1280px) {
+    .modal_task{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: fit-content;
+        height: fit-content;
+        padding: 2vh 3vw 2vh;
+        background-color: white;
+        border: solid 2px black;
+        border-radius: 10px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 1.8rem;
+        white-space: nowrap;
+    }
+    input{
+        width: 90%;
+        height: fit-content;
+        border: solid 2px black;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        padding: 0.3vh 0vw 0.3vh 0.2vw;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    button{
+        width: fit-content;
+        height: fit-content;
+        padding: 1vh 1.5vw 1vh;
+        border: solid 2px black;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    main{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box_lista{
+        height: fit-content;
+        width: fit-content;
+        min-height: 80%;
+        min-width: 90%;
+        padding: 2vh 0.5vw 1vh;
+        border: solid 2px black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1vh;
+    }
+    .botao_add_task{
+        width: fit-content;
+        height: fit-content;
+        padding: 1vh 2vw 1vh;
+        border: solid 2px black;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    .subtitulo_linhas{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+    }
+    .linha{
+        border-bottom: 2px solid black;
+        width: 25vw;
+    }
+    p{
+        font-size: 1.5rem;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    .lista_tasks{
+        width: 100%;
+        height: 2vh;
+        padding: 0vh 1vw 0vh 3vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+    .elemento{
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.3rem;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    .botao_excluir{
+        width: fit-content;
+        height: fit-content;
+        padding: 0.3vh 1vw 0.3vh;
+        font-size: 1rem;
+    }    
 }
-button{
-    width: fit-content;
-    height: fit-content;
-    padding: 1vh 1.5vw 1vh;
-    border: solid 2px black;
-    border-radius: 10px;
-    font-size: 1.3rem;
+@media  (min-width:1300px) {
+    .modal_task{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: fit-content;
+        height: fit-content;
+        padding: 2vh 3vw 2vh;
+        background-color: white;
+        border: solid 2px black;
+        border-radius: 10px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 1.8rem;
+        white-space: nowrap;
+    }
+    input{
+        width: 90%;
+        height: fit-content;
+        border: solid 2px black;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        padding: 0.3vh 0vw 0.3vh 0.2vw;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    button{
+        width: fit-content;
+        height: fit-content;
+        padding: 1vh 1.5vw 1vh;
+        border: solid 2px black;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    main{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box_lista{
+        height: fit-content;
+        width: fit-content;
+        min-height: 80%;
+        min-width: 80%;
+        padding: 2vh 0.5vw 1vh;
+        border: solid 2px black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1vh;
+    }
+    .botao_add_task{
+        width: fit-content;
+        height: fit-content;
+        padding: 1vh 2vw 1vh;
+        border: solid 2px black;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    .subtitulo_linhas{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+    }
+    .linha{
+        border-bottom: 2px solid black;
+        width: 25vw;
+    }
+    p{
+        font-size: 1.5rem;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    .lista_tasks{
+        width: 100%;
+        height: 2vh;
+        padding: 0vh 1vw 0vh 3vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+    .elemento{
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.3rem;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+    }
+    .botao_excluir{
+        width: fit-content;
+        height: fit-content;
+        padding: 0.3vh 1vw 0.3vh;
+        font-size: 1rem;
+    }    
 }
-main{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.box_lista{
-    height: fit-content;
-    width: fit-content;
-    min-height: 70vh;
-    min-width: 50vw;
-    padding: 2vh 2vw 1vh;
-    border: solid 2px black;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1vh;
-}
-.botao_add_task{
-    width: fit-content;
-    height: fit-content;
-    padding: 1vh 2vw 1vh;
-    border: solid 2px black;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-family: 'Abel', sans-serif;
-    font-weight: 600;
-}
-.subtitulo_linhas{
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 4vw;
-}
-.linha{
-    border-bottom: 2px solid black;
-    width: 15vw;
-}
-p{
-    font-size: 1.2rem;
-    font-family: 'Abel', sans-serif;
-    font-weight: 600;
-}
-.lista_tasks{
-    width: 100%;
-    height: 2vh;
-    padding: 1vh 1vw 0vh 2.5vw;
-    font-size: 1.2rem;
-    font-family: 'Abel', sans-serif;
-    font-weight: 600;
-}
-.elemento{
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.botao_excluir{
-    width: fit-content;
-    height: fit-content;
-    padding: 0.5vh 1.5vw 0.5vh;
-    font-size: 1rem;
-    font-weight: 600;
-}
+
+
