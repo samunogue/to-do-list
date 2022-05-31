@@ -7,8 +7,10 @@ function mostrar_modal(){
 }
 function adicionar_task(){
     var task = document.querySelector("input").value;
-    tasks.push(task);
-    localStorage.setItem("tasks", JSON.stringify(tasks));
+    if( task !== ""){
+        tasks.push(task);
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+    }
 }
 function carregar_tasks(){
     var lista = JSON.parse(localStorage.getItem("tasks"))
