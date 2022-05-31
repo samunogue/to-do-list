@@ -9,3 +9,6 @@ a lista de tarefas no ``LocalStorage`` do navegador permitindo o usúario sair d
 - ``Javascript``
 - ``HTML``
 -  ``CSS`` 
+
+## Como acessar 
+- https://samunogue.github.io/to-do-list/
